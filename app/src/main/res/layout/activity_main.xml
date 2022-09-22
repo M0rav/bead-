@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:id="@+id/layout">
+
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kérlek add meg a változtatni kívánt szöveget"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSmaller"
+        android:text="Szöveg kicsinyítése"
+        android:layout_below="@+id/editTextInput"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBigger"
+        android:text="Szöveg nagyítása"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonSmaller"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRndColor"
+        android:text="Random háttérszín"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonBigger"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textShower"
+        android:layout_below="@+id/buttonRndColor"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>
